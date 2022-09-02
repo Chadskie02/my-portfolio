@@ -4,9 +4,667 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>R-S Portfolio</title>
+    <link rel="shortcut icon" href="img/Logo.png" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.theme.default.min.css"> 
+
+    <!-- Swiper CSS -->
+    <link href="css/swiper.min.css" rel="stylesheet" />
+
+    <!-- Aos Min CSS -->
+    <link href="css/aos.min.css" rel="stylesheet" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
 </head>
 <body>
-    <h1>test</h1>
+  
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#">
+                Richard <span class="text-primary">Santos</span>
+            </a>
+            <button class="navbar-toggler btn btn-secondary btn-warning px-3" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+              <ul class="navbar-nav navbar-right mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#works">My Other Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+              </ul>
+            </div>        
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- home section start -->
+    <section class="home bg-dark" id="home">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center align-content-center">
+              <div class="col-sm-8">
+                <h1 class="title-1">Hello I'm Chad</h1>
+                <h2 class="title-2" data-aos="fade-right">WEB DESIGNER/DEVELOPER</h2>
+                <p class="text-white description">To be a part of company that indulges professional growth which provides challenging and rewarding career while allowing me to utilize my knowledge and skills.</p>
+                <a href="#portfolio" class="btn btn-primary text-white btn-lg px-3 mt-3" role="button" data-aos="fade-left">See My Portfolio</a>
+                <a href="Richard-Santos-Resume-18012021-PDF.pdf" download="Richard-Santos-Resume-18012021-PDF" class="btn btn-secondary text-white btn-lg px-3 mt-3" role="button">Download My CV</a>
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- wave start -->
+      <img src="/img/waves.svg" alt="">
+    <!-- wave end -->
+
+    <!-- about section start -->
+    <section class="about py-5 bg-white" id="about">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="text-secondary fw-bold hvr-reveal">About Me</h2>
+            </div>
+          </div>
+        </div>  
+      
+        <div class="row text-center mt-5">
+          <div class="col-sm-4">
+            <div class="card content shadow-lg" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="card-body">
+                    <div class="icon my-3 text-secondary fs-2">
+                      <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="fs-3 py-2 fw-bold hvr-reveal">Education</h3>
+                    <p class="text-dark">
+                      City of Malabon University
+                      Bachelor of Science in Information Technology
+                      2014-2018
+                    </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card content shadow-lg" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2500">
+                <div class="card-body">
+                    <div class="icon my-3 text-secondary fs-2">
+                      <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="fs-3 py-2 fw-bold hvr-reveal">Work Exp</h3>
+                    <p class="text-dark">
+                      3 Yrs Working Experience at Online Thinkers Technology 
+                      as Web Developer
+                    </p>
+                    <p class="text-dark">
+                      1 Yr Working Experience at Qx Information Tech Corp 
+                      as Web Designer
+                    </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card content shadow-lg" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="4500">
+                <div class="card-body">
+                    <div class="icon my-3 text-secondary fs-2">
+                      <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="fs-3 py-2 fw-bold hvr-reveal">Hobbies</h3>
+                    <p class="text-dark">Music, Games, Movies, Drawing, Web Development/Design, Blockchain & Adventure</p>
+                </div>
+            </div>
+          </div>
+
+        </div>   
+
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- portfolio section start -->
+    <section class="portfolio py-5 bg-primary" id="portfolio">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5 text-white">My Portfolio</h2>
+            </div>
+          </div>
+        </div> 
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-xl-11">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/bns2.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://chadskie02.github.io/" class="text-secondary" target="_blank">https://chadskie02.github.io</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: HTML, CSS, Bootstrap, Javascript, Responsive & Mobile Ready</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/Inventory-system.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://github.com/Chadskie02/inventory_system" class="text-secondary" target="_blank">Inventory System</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: PHP, MYSQL, HTML, CSS & Bootstrap</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/self-made-google-calendar.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://github.com/Chadskie02/Calendar_Scheduler2" class="text-secondary" target="_blank">Calendar Appointment</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: PHP, MYSQL, HTML, CSS, Bootstrap, Jquery & Javascript</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/CSEA.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://safestemployers.com/" class="text-secondary" target="_blank">https://safestemployers.com</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: JOOMLA, PHP, HTML, CSS, Bootstrap, Javascript, Responsive & Mobile Ready</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/HRD-Mental-Health-2.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://hrmentalhealth.ca/" class="text-secondary" target="_blank">https://hrmentalhealth.ca</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: WORDPRESS, PHP, HTML, CSS, Bootstrap, Javascript, Responsive & Mobile Ready</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- skills section start -->
+    <section class="works py-5 bg-secondary" id="works">
+      <div class="container-lg d-lg-block d-sm-none py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold md-5 text-white">My Other Works</h2>
+              <div class="container py-5">
+                <!-- Grid row -->
+                <div class="gallery" id="gallery">
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="img-fluid" src="img/works/RS-Logo-White.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="img-fluid" src="img/works/RS-Logo-Dark.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="img-fluid" src="img/works/2022-014 - Richard Santos - front.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/about-amit.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/alloceansmaritime-design-2.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/01-Cover.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/banner-1600x440.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 3">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/certificate-ojt.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/job-cards.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/studio-unit-design.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/Amit Darji Slider 3.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->                  
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/united-polyresins-mockup-home-1-updated.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/Amit Darji Slider 1.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/design-3.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->   
+                  
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/FIGMA-FIRST-DESIGN.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column --> 
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/first-banner.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column --> 
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/second-banner.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column --> 
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/ISD-COMBINED-DESIGN.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->    
+                  
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/mock-design.png" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->    
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/corevalues2.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column --> 
+                  
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 1">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/second-design-amit-darji-updated-with-feedback-4.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column --> 
+
+                  <!-- Grid column -->
+                  <div class="mb-3 pics animation all 2">
+                    <div class="card" data-aos="fade-up">
+                      <img class="card-img-top" src="img/works/Amit Darji Slider 2.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+            </div>
+          </div>
+        </div>   
+      </div>
+    </section>
+    <!-- skills section end -->
+
+    <section class="py-5 skills" id="skills">
+      <div class="row align-items-center text-center">
+         <div class="col-lg-12">
+           <div class="container">
+            <h2 class="text-secondary fw-bold">My Skills</h2>
+            <div class="container py-5">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/html5.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">HTML5</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/css3.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">CSS3</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/php.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">PHP</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/bootstrap.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">BOOTSTRAP</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/wordpress.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">WORDPRESS</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/joomla.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">JOOMLA</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/javascript.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">JAVASCRIPT</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/jquery.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">JQUERY</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/figma.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">FIGMA</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/photoshop.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">PHOTOSHOP</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card">
+                    <img class="card-img-top" src="img/skills/mysql.png" alt="Card image cap">
+                    <div class="section-title text-center">
+                      <h2 class="fw-bold md-5 text-secondary">MYSQL</h2>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+           </div>
+         </div>
+       </div>
+    </section>
+
+    <!-- Image of location/map section start -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.9749416934307!2d120.96905382915529!3d14.661629296795478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b43727beec35%3A0x699db22357fd42f3!2s29%20Marcelo%20H.%20Del%20Pilar%20St%2C%20Malabon%2C%201475%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1605818541058!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0; margin-bottom:-7px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- Image of location/map  section end -->
+
+    <!-- footer section start -->
+    <footer class="footer py-4 bg-dark" id="contact">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="container-lg py-5">    
+              <div class="row justify-content-center">
+                <div class="col-md-3 text-center">
+                  <a href="">
+                    <img src="/img/Logo.png" alt="">
+                  </a>  
+                  </br>
+                  <p class="text-white footer-text">Richard <span class="text-primary">Santos</span></p>
+                </div>
+                <div class="col-md-2">
+                  <h5 class="text-uppercase text-left">Quicklinks</h5>
+                  <ul class="list">
+                    <li><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li><a class="nav-link text-white" href="#about">About</a></li>
+                    <li><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link text-white" href="#works">My Other Works</a></li>
+                    <li><a class="nav-link text-white" href="#skills">My Skills</a></li>
+                    <li><a class="nav-link text-white" href="#contact">Contact Me</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="text-uppercase">Contact Me</h5>
+                  <p class="contact"><span>Email</span>: <a href="mailto:chadskie02@gmail.com">chadskie02@gmail.com</a></p>
+                  <p class="contact"><span>Mobile Number</span>:</br> <a href="tel:09217229031">09217229031</a> / <a href="tel:09760838629">09760838629</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h5 class="text-uppercase">Location</h5>
+                  <p class="contact"><span>Permanent Address</span>: #29 int. M.H. Del Pilar st., Brgy Tugatog, Malabon City</p>
+                  <p class="contact"><span>Present Address</span>: BLK. 55 Lot 11 Phase 3 Las Palmas Sub. Caypombo Sta. Maria Bulacan</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-12">
+                  <ul class="social-media">
+                    <li><a href="https://www.facebook.com/chadskie02/" target="_blank"><img src="/img/social-media/Facebook.png" class="social-width"></a></li>
+                    <li><a href="https://www.linkedin.com/in/richard-santos-7b594118b/" target="_blank"><img src="/img/social-media/LinkedIn.png" class="social-width"></a></li>
+                    <li><a href="mailto:chadskie02@gmail.com" target="_blank"><img src="/img/social-media/Google.png" class="social-width"></a></li>
+                    <li><a href="https://twitter.com/richard77132470" target="_blank"><img src="/img/social-media/Twitter.png" class="social-width"></a></li>
+                    <li><a href="https://t.me/Chadskie02" target="_blank"><img src="/img/social-media/Telegram.png" class="social-width"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="text-center text-white">Copyright &copy; RS All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    
+      
 </body>
+    <!-- jQuery Swiper Min Js -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- jQuery Aos Min Js -->
+    <script src="js/aos.min.js"></script>
+
+    <script>
+        AOS.init({
+          duration: 3000,
+          once: true,
+        });
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script> 
+
+    <!-- Owl JS -->
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/assets/owlcarousel/owl.carousel.js"></script>  
+    
+    <script>
+    $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+    })
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
+    <!-- jquery menu -->
+    <script>
+      $('.nav-item').click(function(){
+        $('li.active').removeClass('active');
+        $(this).addClass('active');
+      });
+
+      $(document).ready(function(){       
+        var scroll_pos = 110;
+        $(document).scroll(function() { 
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 800) {
+                $('.hvr-reveal').css('color', '#BDFF00');
+            } else {
+                $('.hvr-reveal').css('color', '#3A3A3A');
+            }
+        });
+    });
+    </script>
+
 </html>
