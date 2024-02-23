@@ -2,210 +2,484 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/Logo.png">
     <title>RS Portfolio</title>
     <link rel="shortcut icon" href="img/Logo.png" />
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css"> 
+
+    <!-- Swiper CSS -->
+    <link href="css/swiper.min.css" rel="stylesheet" />
 
     <!-- Aos Min CSS -->
     <link href="css/aos.min.css" rel="stylesheet" />
-    
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
 </head>
 <body>
-    
-    <!-- Header Start -->
-    <header class="header">
-        <a href="#" class="logo">Chad.<span class="span">dev</span></a>
-
-        <div class="menu-toggle" id="mobile-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+  
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#">
+                Richard <span class="text-primary">Santos</span>
+            </a>
+            <button class="navbar-toggler btn btn-secondary btn-warning px-3" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+              <ul class="navbar-nav navbar-right mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+              </ul>
+            </div>        
         </div>
+    </nav>
+    <!-- navbar end -->
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <!-- Header End -->
-
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>
-                <div class="typing-effect" id="name-container"></div>
-            </h1>
-            <h3>Frontend Web Developer</h3>
-            <p>My main focus is to expand my expertise in web application development and related technologies. 
-                I am always seeking new opportunities to learn, grow and enhance my skills continuously.</p>
-                <div class="btn-box">
-                    <a href="#contact" role="button" data-aos="fade-right">Hire Me</a>
-                    <a href="Richard-Santos-CV-01312024.pdf" target="_blank" role="button">Download My CV</a>
-                </div>
-                <ul class="social-media">
-                    <li><a href="https://www.facebook.com/chadskie02/" target="_blank"><img src="img/social-media/Facebook.png" class="social-width" width="7%"></a></li>
-                    <li><a href="https://www.linkedin.com/in/richard-santos-7b594118b/" target="_blank"><img src="img/social-media/LinkedIn.png" class="social-width" width="7%"></a></li>
-                    <li><a href="mailto:chadskie02@gmail.com" target="_blank"><img src="img/social-media/Google.png" class="social-width" width="7%"></a></li>
-                    <li><a href="https://twitter.com/richard77132470" target="_blank"><img src="img/social-media/Twitter.png" class="social-width" width="7%"></a></li>
-                    <li><a href="https://t.me/Chadskie02" target="_blank"><img src="img/social-media/Telegram.png" class="social-width" width="7%"></a></li>
-                </ul>                
+    <!-- home section start -->
+    <section class="home bg-dark py-5" id="home">
+        <div class="container">
+            <div class="row pt-5 align-items-center align-content-center">
+              <div class="col-sm-8">
+                <h1 class="title-1">Hello I'm Chad</h1>
+                <h2 class="title-2" data-aos="fade-right">WEB DESIGNER - DEVELOPER</h2>
+                <p class="text-white description">To be a part of company that indulges professional growth which provides challenging and rewarding career while allowing me to utilize my knowledge and skills.</p>
+                <a href="#portfolio" class="btn btn-primary text-white btn-lg px-3 mt-3" role="button" data-aos="fade-left">See My Portfolio</a>
+                <a href="Resume-Richard-Santos v1" download="Resume-Richard-Santos v1" class="btn btn-secondary text-white btn-lg px-3 mt-3" role="button">Download My CV</a>
+                </p>
+              </div>
+            </div>
         </div>
     </section>
-    <!-- Home Section End -->
+    <!-- home section end -->
 
     <!-- wave start -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bdff00" fill-opacity="1" d="M0,160L16,165.3C32,171,64,181,96,165.3C128,149,160,107,192,117.3C224,128,256,192,288,229.3C320,267,352,277,384,277.3C416,277,448,267,480,234.7C512,203,544,149,576,154.7C608,160,640,224,672,234.7C704,245,736,203,768,181.3C800,160,832,160,864,138.7C896,117,928,75,960,80C992,85,1024,139,1056,176C1088,213,1120,235,1152,250.7C1184,267,1216,277,1248,245.3C1280,213,1312,139,1344,128C1376,117,1408,171,1424,197.3L1440,224L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3a3a3a" fill-opacity="1" d="M0,192L48,202.7C96,213,192,235,288,234.7C384,235,480,213,576,186.7C672,160,768,128,864,138.7C960,149,1056,203,1152,202.7C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <!-- <img src="img/waves.svg" alt=""> -->
     <!-- wave end -->
 
-
-
-    <!-- About Section Start -->
-    <section class="about" id="about">
-        <div class="about-content">
-            <h1 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">About</h1>
-            <div class="container">
-                <div class="card" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="2500">
-                    <i class="fas fa-school hvr-reveal"></i>
-                    <h2>Education</h2>
-                    <p>City of Malabon University Bachelor of Science in Information Technology 2014-2018</p>
-                </div>
-                <div class="card" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="2500">
-                    <i class="fas fa-code hvr-reveal"></i>
-                    <h2>Work Experience</h2>
-                    <p>System Analyst - Accenture Inc.</p>
-                    <p>Web Designer - Quantum X</p>
-                    <p>Web Developer – Online Thinkers Technology</p>
-                </div>
-                <div class="card" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="2500">
-                    <i class="fas fa-music hvr-reveal"></i>
-                    <h2>Hobbies</h2>
-                    <p>Music, Games, Movies, Drawing, Web Development/Design, Blockchain & Adventure</p>
-                </div>
+    <!-- about section start -->
+    <section class="about pb-5 bg-white" id="about">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="text-secondary fw-bold hvr-reveal">About Me</h2>
             </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Skills Section Start -->
-    <section class="skills" id="skills">
-        <div class="skills-content">
-            <h1 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">Tech Stack</h1>
-            <div class="container">
-                <div class="logos">
-                    <ul>
-                        <li><img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon" data-aos="fade-up"></li>
-                        <li><img src="https://skillicons.dev/icons?i=php,bootstrap" alt="skill-icon" data-aos="fade-up"></li>
-                        <li><img src="https://skillicons.dev/icons?i=photoshop,figma" alt="skill-icon" data-aos="fade-up"></li>
-                        <li><img src="https://skillicons.dev/icons?i=vscode,wordpress" alt="skill-icon" data-aos="fade-up"></li>
-                        <li><img src="https://skillicons.dev/icons?i=git,scss" alt="skill-icon" data-aos="fade-up"></li>
-                        <li><img src="https://skillicons.dev/icons?i=js,jquery" alt="skill-icon" data-aos="fade-up"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Skills Section End -->
-
-    <!-- Portfolio Section Start -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-content">
-            <h1 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">Portfolio</h1>
-            <div class="container">
-                <h2>New projects coming soon.. 🥰</h2>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Section End -->
-
-    <!-- Contact Section Start -->
-    <section class="contact" id="contact">
-        <div class="contact-content">
-        <h1 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">Contact</h1>
-            <div class="container">
-                <div class="contact-icon-box">
-                    <span>
-                        <i class="fas fa-location-arrow hvr-reveal"></i>
-                    </span>
-                    <div class="contact-info">
-                        <h3>Location</h3>
-                        <p>Sta. Maria, Bulacan, Philippines</p>
+          </div>
+        </div>  
+      
+        <div class="row text-center mt-5">
+          <div class="col-sm-4">
+            <div class="card content shadow-lg" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="card-body">
+                    <div class="icon my-3 text-secondary fs-2">
+                      <i class="fas fa-school hvr-reveal"></i>
                     </div>
-                </div>
-                <div class="contact-icon-box">
-                    <span>
-                        <i class="fas fa-envelope-open-text hvr-reveal"></i>
-                    </span>
-                    <div class="contact-info">
-                        <h3>Mail</h3>
-                        <a href="mailto:chadskie02@gmail.com">chadskie02@gmail.com</a>
-                    </div>
-                </div>
-                <div class="contact-icon-box">
-                    <span>
-                        <i class="fas fa-phone hvr-reveal"></i>
-                    </span>
-                    <div class="contact-info">
-                        <h3>Mobile</h3>
-                        <p><a href="tel:09217229031">09217229031</a> / <a href="tel:09760838629">09760838629</a></p>
-                    </div>
+                    <h3 class="fs-3 py-2 fw-bold hvr-reveal">Education</h3>
+                    <p class="text-dark">
+                      City of Malabon University
+                      Bachelor of Science in Information Technology
+                      2014-2018
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Contact Section End -->
+          </div>
 
-    <!-- Footer Section Start -->
-    <footer>
-        <div>
-            <a href="">
-                <img src="img/Logo.png" width="20%" height="20%" alt="">
-            </a> 
+          <div class="col-sm-4">
+            <div class="card content shadow-lg" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2500">
+                <div class="card-body">
+                    <div class="icon my-3 text-secondary fs-2">
+                      <i class="fas fa-code hvr-reveal"></i>
+                    </div>
+                    <h3 class="fs-3 py-2 fw-bold hvr-reveal">Work Exp</h3>
+                    <p class="text-dark">
+                      1 Year at Accenture Inc. as System Analyst
+                    </p>
+                    <p class="text-dark">
+                      1 Year and 5 Months at Qx Information Tech Corp as Web Designer
+                    </p>
+                    <p class="text-dark">
+                      3 Years and 1 Month Online Thinkers Technology as Web Developer
+                    </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="card content shadow-lg" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="4500">
+                <div class="card-body">
+                    <div class="icon my-3 text-secondary fs-2">
+                      <i class="fas fa-music hvr-reveal"></i>
+                    </div>
+                    <h3 class="fs-3 py-2 fw-bold hvr-reveal">Hobbies</h3>
+                    <p class="text-dark">Music, Games, Movies, Drawing, Web Development/Design, Blockchain & Adventure</p>
+                </div>
+            </div>
+          </div>
+
+        </div>   
+
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- portfolio section start -->
+    <section class="portfolio py-5 bg-primary" id="portfolio">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5 text-white">My Portfolio</h2>
+            </div>
+          </div>
+        </div> 
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-xl-11">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/web-design-gaming-hub.png" class="w-10 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://www.figma.com/community/file/1290030150402607585/gaming-hub" class="text-secondary" target="_blank">Web Design Using Figma - Gaming Hub</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: Figma</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/Inventory-system.png" class="w-10 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://github.com/Chadskie02/inventory_system" class="text-secondary" target="_blank">Inventory System</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: PHP, MYSQL, HTML, CSS & Bootstrap</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/self-made-google-calendar.png" class="w-10 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://github.com/Chadskie02/Calendar_Scheduler2" class="text-secondary" target="_blank">Calendar Appointment</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: PHP, MYSQL, HTML, CSS, Bootstrap, Jquery & Javascript</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/simple-qr-code-attendance-system.png" class="w-10 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://github.com/Chadskie02/Simple-Todo-List-Using-Laravel" class="text-secondary" target="_blank">Simple QR Code Attendance System</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: PHP, AJAX, JQUERY, JAVASCRIPT, MYSQL, HTML, CSS & Bootstrap</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/todo-list.png" class="w-10 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://github.com/Chadskie02/simple-qr-code-attendance-system" class="text-secondary" target="_blank">Simple To Do List Using Laravel & Jquery(Ajax)</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: PHP, LARAVEL, AJAX, JQUERY, MYSQL, HTML, CSS & Bootstrap</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- WEB DESIGN -->
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/bns2.png" class="w-10 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://chadskie02.github.io/" class="text-secondary" target="_blank">chadskie02.github.io</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: HTML, CSS, Bootstrap, Javascript, Responsive & Mobile Ready</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/CSEA.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://safestemployers.com/" class="text-secondary" target="_blank">Safest Employers</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: JOOMLA, PHP, HTML, CSS, Bootstrap, Javascript, Responsive & Mobile Ready</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/HRD-Mental-Health-2.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://hrmentalhealth.ca/" class="text-secondary" target="_blank">HR Mental Health Canada</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: WORDPRESS, PHP, HTML, CSS, Bootstrap, Javascript, Responsive & Mobile Ready</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white shadow-sm p-5 mb-5">
+                    <img src="img/portfolio/unitedpolyresins.png" class="w-100 img-thumbnail" alt="portfolio">
+                    <div class="section-title text-center pt-5">
+                      <h2 class="fw-bold md-5"><a href="https://unitedpolyresins.com.ph/" class="text-secondary" target="_blank">United Polyresins</a></h2>
+                      <p class="text-muted"><strong>Technology Used</strong>: WORDPRESS, PHP, HTML, CSS, Bootstrap, Javascript, Responsive & Mobile Ready</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>      
+          </div>
         </div>
-        <div>
-            <ul class="social-media">
-                <li><a href="https://www.facebook.com/chadskie02/" target="_blank"><img src="img/social-media/Facebook.png" class="social-width" width="7%"></a></li>
-                <li><a href="https://www.linkedin.com/in/richard-santos-7b594118b/" target="_blank"><img src="img/social-media/LinkedIn.png" class="social-width" width="7%"></a></li>
-                <li><a href="mailto:chadskie02@gmail.com" target="_blank"><img src="img/social-media/Google.png" class="social-width" width="7%"></a></li>
-                <li><a href="https://twitter.com/richard77132470" target="_blank"><img src="img/social-media/Twitter.png" class="social-width" width="7%"></a></li>
-                <li><a href="https://t.me/Chadskie02" target="_blank"><img src="img/social-media/Telegram.png" class="social-width" width="7%"></a></li>
-            </ul>    
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- skills section start -->
+    <section class="py-5 skills" id="skills">
+      <div class="row align-items-center text-center">
+         <div class="col-lg-12">
+            <div class="container">
+              <h2 class="text-secondary fw-bold">My Skills</h2>
+                <div class="container py-5">
+                  <div #swiperRef="" class="swiper-container mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/skills/html5.png" alt="HTML5">
+                        <h2 class="fw-bold md-5 text-secondary">HTML5</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/css3.png" alt="CSS3">
+                        <h2 class="fw-bold md-5 text-secondary">CSS3</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/php.png" alt="PHP">
+                        <h2 class="fw-bold md-5 text-secondary">PHP</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/bootstrap.png" alt="BOOTSTRAP">
+                        <h2 class="fw-bold md-5 text-secondary">BOOTSTRAP</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/wordpress.png" alt="WORDPRESS">
+                        <h2 class="fw-bold md-5 text-secondary">WORDPRESS</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/joomla.png" alt="JOOMLA">
+                        <h2 class="fw-bold md-5 text-secondary">JOOMLA</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/javascript.png" alt="JS">
+                        <h2 class="fw-bold md-5 text-secondary">JAVASCRIPT</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/jquery.png" alt="JQUERY">
+                        <h2 class="fw-bold md-5 text-secondary">JQUERY</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/figma.png" alt="FIGMA">
+                        <h2 class="fw-bold md-5 text-secondary">FIGMA</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/photoshop.png" alt="PS">
+                        <h2 class="fw-bold md-5 text-secondary">PHOTOSHOP</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/mysql.png" alt="MYSQL">
+                        <h2 class="fw-bold md-5 text-secondary">MYSQL</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/bitbucket.png" alt="bitbucket">
+                        <h2 class="fw-bold md-5 text-secondary">BITBUCKET</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/Salesforce-Logo.png" alt="salesforce">
+                        <h2 class="fw-bold md-5 text-secondary">SALESFORCE</h2>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/skills/vscode.png" alt="visualstudiocode">
+                        <h2 class="fw-bold md-5 text-secondary">VISUAL STUDIO CODE</h2>
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- skills section end -->
+
+    <!-- Image of location/map section start -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.9749416934307!2d120.96905382915529!3d14.661629296795478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b43727beec35%3A0x699db22357fd42f3!2s29%20Marcelo%20H.%20Del%20Pilar%20St%2C%20Malabon%2C%201475%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1605818541058!5m2!1sen!2sph" width="100%" height="450" frameborder="0" style="border:0; margin-bottom:-7px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- Image of location/map  section end -->
+    </body>
+    <!-- footer section start -->
+    <footer class="footer py-4 bg-dark" id="contact">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="container-lg py-5">    
+              <div class="row justify-content-center">
+                <div class="col-md-3 text-center">
+                  <a href="">
+                    <img src="img/Logo.png" alt="">
+                  </a>  
+                  </br>
+                  <p class="text-white footer-text">Richard <span class="text-primary">Santos</span></p>
+                </div>
+                <div class="col-md-2">
+                  <h5 class="text-uppercase text-left">Quicklinks</h5>
+                  <ul class="list">
+                    <li><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li><a class="nav-link text-white" href="#about">About</a></li>
+                    <li><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link text-white" href="#works">My Other Works</a></li>
+                    <li><a class="nav-link text-white" href="#skills">My Skills</a></li>
+                    <li><a class="nav-link text-white" href="#contact">Contact Me</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="text-uppercase">Contact Me</h5>
+                  <p class="contact"><span>Email</span>: <a href="mailto:chadskie02@gmail.com">chadskie02@gmail.com</a></p>
+                  <p class="contact"><span>Mobile Number</span>:</br> <a href="tel:09217229031">09217229031</a> / <a href="tel:09760838629">09760838629</a></p>
+                  <p class="contact"><span>Trailhead Profile</span>:</br> <a href="https://www.salesforce.com/trailblazer/chadskie">www.salesforce.com/trailblazer/chadskie</a></p>
+                  
+                </div>
+                <div class="col-md-4">
+                  <h5 class="text-uppercase">Location</h5>
+                  <p class="contact"><span>Permanent Address</span>: #29 int. M.H. Del Pilar st., Brgy Tugatog, Malabon City</p>
+                  <p class="contact"><span>Present Address</span>: BLK. 55 Lot 11 Phase 3 Las Palmas Sub. Caypombo Sta. Maria Bulacan</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-12">
+                  <ul class="social-media">
+                    <li><a href="https://www.facebook.com/chadskie02/" target="_blank"><img src="img/social-media/Facebook.png" class="social-width"></a></li>
+                    <li><a href="https://www.linkedin.com/in/richard-santos-7b594118b/" target="_blank"><img src="img/social-media/LinkedIn.png" class="social-width"></a></li>
+                    <li><a href="mailto:chadskie02@gmail.com" target="_blank"><img src="img/social-media/Google.png" class="social-width"></a></li>
+                    <li><a href="https://twitter.com/richard77132470" target="_blank"><img src="img/social-media/Twitter.png" class="social-width"></a></li>
+                    <li><a href="https://t.me/Chadskie02" target="_blank"><img src="img/social-media/Telegram.png" class="social-width"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="text-center text-white">Copyright &copy; RS All rights reserved</p>
+          </div>
         </div>
-        <div>
-            <p>Made by Chadskie © 2024 </p>
-        </div>
+      </div>
     </footer>
-    <!-- Footer Section End -->
-
-    <!-- Script Start -->
-    <script src="js/index.js"></script>
-    <script src="js/nav.js"></script>
+    <!-- footer section end -->
+    
+    <!-- jQuery Swiper Min Js -->
+    <script src="js/swiper.min.js"></script>
 
     <!-- jQuery Aos Min Js -->
     <script src="js/aos.min.js"></script>
 
     <script>
         AOS.init({
-            duration: 3000,
-            once: true,
+          duration: 3000,
+          once: true,
         });
     </script>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 
+    <!-- Owl JS -->
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="assets/owlcarousel/owl.carousel.js"></script>   -->
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        spaceBetween: 15,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+              640: {
+                freemode:true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              320: {
+                freemode:true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+              }
+        }
+      });
+    </script>
+    
     <!-- jquery menu -->
     <script>
-        $('.nav-item').click(function(){
+      $('.nav-item').click(function(){
         $('li.active').removeClass('active');
         $(this).addClass('active');
-        });
-    
-        $(document).ready(function(){       
+      });
+
+      $(document).ready(function(){       
         var scroll_pos = 110;
         $(document).scroll(function() { 
             scroll_pos = $(this).scrollTop();
@@ -217,5 +491,5 @@
         });
     });
     </script>
-</body>
+
 </html>
